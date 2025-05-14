@@ -1,12 +1,11 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11/"
-     xml:base="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11/"
+<rdf:RDF xmlns="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:schema="http://schema.org/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11"/>
     
 
@@ -173,6 +172,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:comment>This element represents the concept of &apos;creator&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>creator</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -180,9 +181,11 @@
     <!-- http://schema.org/isPartOf -->
 
     <owl:ObjectProperty rdf:about="http://schema.org/isPartOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#hasComponent"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
+        <rdfs:comment>This element represents the concept of &apos;isPartOf&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>isPartOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -192,6 +195,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#evaluatedBy">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Evaluation"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Stakeholder"/>
+        <rdfs:comment>This element represents the concept of &apos;evaluatedBy&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>evaluatedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -201,6 +206,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#evaluatesBasedOnCriteria">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Evaluation"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Criteria"/>
+        <rdfs:comment>This element represents the concept of &apos;evaluatesBasedOnCriteria&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>evaluatesBasedOnCriteria</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -210,6 +217,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#hasComponent">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent"/>
+        <rdfs:comment>This element represents the concept of &apos;hasComponent&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>hasComponent</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -219,6 +228,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#hasProcess">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Process"/>
+        <rdfs:comment>This element represents the concept of &apos;hasProcess&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>hasProcess</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -228,6 +239,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#hasStakeholder">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Stakeholder"/>
+        <rdfs:comment>This element represents the concept of &apos;hasStakeholder&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>hasStakeholder</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -237,6 +250,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#hasTool">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
+        <rdfs:comment>This element represents the concept of &apos;hasTool&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>hasTool</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -246,6 +261,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#implementsProcess">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Student"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Process"/>
+        <rdfs:comment>This element represents the concept of &apos;implementsProcess&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>implementsProcess</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -255,6 +272,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#managesProjectComponent">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Manager"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent"/>
+        <rdfs:comment>This element represents the concept of &apos;managesProjectComponent&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>managesProjectComponent</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -264,6 +283,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#presentedBy">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Student"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Presentation"/>
+        <rdfs:comment>This element represents the concept of &apos;presentedBy&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>presentedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -273,6 +294,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#produces">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Process"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Deliverable"/>
+        <rdfs:comment>This element represents the concept of &apos;produces&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>produces</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -282,6 +305,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#requiresTool">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Implementation"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
+        <rdfs:comment>This element represents the concept of &apos;requiresTool&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>requiresTool</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -291,6 +316,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#submitsTo">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Student"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Manager"/>
+        <rdfs:comment>This element represents the concept of &apos;submitsTo&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>submitsTo</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -300,6 +327,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#supervises">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Supervisor"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Student"/>
+        <rdfs:comment>This element represents the concept of &apos;supervises&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>supervises</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -309,6 +338,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#useTool">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Process"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
+        <rdfs:comment>This element represents the concept of &apos;useTool&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>useTool</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -324,51 +355,14 @@
     
 
 
-    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#FrameSize -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#FrameSize">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video"/>
-        <rdfs:range rdf:resource="http://schema.org/videoFrameSize"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#PosterFormat -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#PosterFormat">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Poster"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#VideoQuality -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#VideoQuality">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video"/>
-        <rdfs:range rdf:resource="http://schema.org/videoQuality"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Videoformat -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Videoformat">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video"/>
-        <rdfs:range rdf:resource="http://schema.org/encodingformat"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#aiModelName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#aiModelName">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#AIModel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This element represents the concept of &apos;aiModelName&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>aiModelName</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -379,6 +373,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#AIModel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This element represents the concept of &apos;aiModelPurpose&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>aiModelPurpose</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -389,6 +385,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Criteria"/>
         <rdfs:range rdf:resource="http://schema.org/description"/>
+        <rdfs:comment>This element represents the concept of &apos;criteriaDescription&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>criteriaDescription</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -399,6 +397,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Database"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This element represents the concept of &apos;databaseType&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>databaseType</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -409,6 +409,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Student"/>
         <rdfs:range rdf:resource="http://schema.org/department"/>
+        <rdfs:comment>This element represents the concept of &apos;department&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>department</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -419,6 +421,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#FacultyMember"/>
         <rdfs:range rdf:resource="http://schema.org/jobTitle"/>
+        <rdfs:comment>This element represents the concept of &apos;designation&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>designation</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -429,6 +433,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Documentation"/>
         <rdfs:range rdf:resource="http://schema.org/version"/>
+        <rdfs:comment>This element represents the concept of &apos;documentVersion&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>documentVersion</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -439,6 +445,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
         <rdfs:range rdf:resource="http://schema.org/duration"/>
+        <rdfs:comment>This element represents the concept of &apos;durationInWeeks&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>durationInWeeks</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -449,6 +457,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Stakeholder"/>
         <rdfs:range rdf:resource="http://schema.org/email"/>
+        <rdfs:comment>This element represents the concept of &apos;email&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>email</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -460,6 +470,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
         <rdfs:range rdf:resource="http://schema.org/endDate"/>
+        <rdfs:comment>This element represents the concept of &apos;endDate&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>endDate</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -470,6 +482,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Assessment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This element represents the concept of &apos;feedback&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>feedback</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -480,6 +494,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Documentation"/>
         <rdfs:range rdf:resource="http://schema.org/contentSize"/>
+        <rdfs:comment>This element represents the concept of &apos;fileSize&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>fileSize</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -490,6 +506,19 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Documentation"/>
         <rdfs:range rdf:resource="http://schema.org/encodingformat"/>
+        <rdfs:comment>This element represents the concept of &apos;fileType&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>fileType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#frameSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#frameSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video"/>
+        <rdfs:range rdf:resource="http://schema.org/videoFrameSize"/>
+        <rdfs:comment>This element represents the concept of &apos;frameSize&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>frameSize</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -500,6 +529,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Framework"/>
         <rdfs:range rdf:resource="http://schema.org/softwareFramework"/>
+        <rdfs:comment>This element represents the concept of &apos;frameworkName&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>frameworkName</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -510,6 +541,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Documentation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>This element represents the concept of &apos;isFinalSubmission&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>isFinalSubmission</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -520,6 +553,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#SourceCode"/>
         <rdfs:range rdf:resource="http://schema.org/programmingLanguage"/>
+        <rdfs:comment>This element represents the concept of &apos;languageUsed&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>languageUsed</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -530,6 +565,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Documentation"/>
         <rdfs:range rdf:resource="http://schema.org/dateModified"/>
+        <rdfs:comment>This element represents the concept of &apos;lastModified&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>lastModified</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -540,6 +577,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Assessment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>This element represents the concept of &apos;marksObtained&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>marksObtained</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -550,6 +589,19 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Stakeholder"/>
         <rdfs:range rdf:resource="http://schema.org/telephone"/>
+        <rdfs:comment>This element represents the concept of &apos;phoneNumber&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>phoneNumber</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#posterFormat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#posterFormat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Poster"/>
+        <rdfs:range rdf:resource="http://schema.org/encodingformat"/>
+        <rdfs:comment>This element represents the concept of &apos;posterFormat&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>posterFormat</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -559,6 +611,8 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#projectDescription">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
         <rdfs:range rdf:resource="http://schema.org/description"/>
+        <rdfs:comment>This element represents the concept of &apos;projectDescription&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>projectDescription</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -569,6 +623,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
         <rdfs:range rdf:resource="http://schema.org/name"/>
+        <rdfs:comment>This element represents the concept of &apos;projectTitle&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>projectTitle</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -580,6 +636,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Student"/>
         <rdfs:range rdf:resource="http://schema.org/identifier"/>
+        <rdfs:comment>This element represents the concept of &apos;registrationNumber&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>registrationNumber</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -590,6 +648,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Assessment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>This element represents the concept of &apos;score&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>score</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -600,6 +660,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Stakeholder"/>
         <rdfs:range rdf:resource="http://schema.org/name"/>
+        <rdfs:comment>This element represents the concept of &apos;stakeholderName&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>stakeholderName</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -610,6 +672,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Stakeholder"/>
         <rdfs:range rdf:resource="http://schema.org/roleName"/>
+        <rdfs:comment>This element represents the concept of &apos;stakeholderRole&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>stakeholderRole</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -620,6 +684,9 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
+        <rdfs:range rdf:resource="http://schema.org/startDate"/>
+        <rdfs:comment>This element represents the concept of &apos;startDate&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>startDate</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -630,6 +697,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Documentation"/>
         <rdfs:range rdf:resource="http://schema.org/dateSubmitted"/>
+        <rdfs:comment>This element represents the concept of &apos;submissionDate&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>submissionDate</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -640,6 +709,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
         <rdfs:range rdf:resource="http://schema.org/license"/>
+        <rdfs:comment>This element represents the concept of &apos;toolLicense&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>toolLicense</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -650,6 +721,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
         <rdfs:range rdf:resource="http://schema.org/name"/>
+        <rdfs:comment>This element represents the concept of &apos;toolName&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>toolName</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -660,6 +733,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This element represents the concept of &apos;toolType&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>toolType</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -670,6 +745,30 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
         <rdfs:range rdf:resource="http://schema.org/version"/>
+        <rdfs:comment>This element represents the concept of &apos;toolVersion&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>toolVersion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#videoFormat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#videoFormat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video"/>
+        <rdfs:range rdf:resource="http://schema.org/encodingformat"/>
+        <rdfs:comment>This element represents the concept of &apos;videoFormat&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>videoFormat</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#videoQuality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#videoQuality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video"/>
+        <rdfs:range rdf:resource="http://schema.org/videoQuality"/>
+        <rdfs:comment>This element represents the concept of &apos;videoQuality&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>videoQuality</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -680,18 +779,9 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Criteria"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>This element represents the concept of &apos;weight&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>weight</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
-        <rdfs:range rdf:resource="http://schema.org/encodingformat"/>
-        <rdfs:range rdf:resource="http://schema.org/startDate"/>
-    </rdf:Description>
     
 
 
@@ -706,21 +796,66 @@
     
 
 
+    <!-- http://schema.org/Code -->
+
+    <owl:Class rdf:about="http://schema.org/Code">
+        <rdfs:comment>This represents the class Code which we used from schema.org</rdfs:comment>
+        <rdfs:label>Code</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Documentation -->
+
+    <owl:Class rdf:about="http://schema.org/Documentation">
+        <rdfs:comment>This represents the class Documentation which we used from schema.org</rdfs:comment>
+        <rdfs:label>Documentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person">
+        <rdfs:comment>This represents the class Person which we used from schema.org</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://schema.org/Poster -->
 
-    <owl:Class rdf:about="http://schema.org/Poster"/>
+    <owl:Class rdf:about="http://schema.org/Poster">
+        <rdfs:comment>This represents the class Poster which we used from schema.org</rdfs:comment>
+        <rdfs:label>Poster</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://schema.org/Project -->
 
-    <owl:Class rdf:about="http://schema.org/Project"/>
+    <owl:Class rdf:about="http://schema.org/Project">
+        <rdfs:comment>This represents the class Project which we used from schema.org</rdfs:comment>
+        <rdfs:label>Project</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Review -->
+
+    <owl:Class rdf:about="http://schema.org/Review">
+        <rdfs:comment>This represents the class Review which we used from schema.org</rdfs:comment>
+        <rdfs:label>Review</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://schema.org/VideoObject -->
 
-    <owl:Class rdf:about="http://schema.org/VideoObject"/>
+    <owl:Class rdf:about="http://schema.org/VideoObject">
+        <rdfs:comment>This represents the class VideoObject which we used from schema.org</rdfs:comment>
+        <rdfs:label>Video</rdfs:label>
+    </owl:Class>
     
 
 
@@ -728,6 +863,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#AIModel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
+        <rdfs:comment>This class represents the concept of &apos;AIModel&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>AIModel</rdfs:label>
     </owl:Class>
     
 
@@ -736,6 +873,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Assessment">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Evaluation"/>
+        <rdfs:comment>This class represents the concept of &apos;Assessment&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Assessment</rdfs:label>
     </owl:Class>
     
 
@@ -782,6 +921,8 @@
                 <owl:onDataRange rdf:resource="http://schema.org/startDate"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This class represents the concept of &apos;CapstoneProject&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>CapstoneProject</rdfs:label>
     </owl:Class>
     
 
@@ -790,6 +931,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Criteria">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Evaluation"/>
+        <rdfs:comment>This class represents the concept of &apos;Criteria&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Criteria</rdfs:label>
     </owl:Class>
     
 
@@ -798,6 +941,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Database">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
+        <rdfs:comment>This class represents the concept of &apos;Database&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Database</rdfs:label>
     </owl:Class>
     
 
@@ -806,6 +951,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Deliverable">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent"/>
+        <rdfs:comment>This class represents the concept of &apos;Deliverable&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Deliverable</rdfs:label>
     </owl:Class>
     
 
@@ -814,6 +961,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#DesignDocument">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Documentation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#FinalReport"/>
+        <rdfs:comment>This class represents the concept of &apos;DesignDocument&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>DesignDocument</rdfs:label>
     </owl:Class>
     
 
@@ -822,6 +972,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#DevelopmentTool">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
+        <rdfs:comment>This class represents the concept of &apos;DevelopmentTool&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>DevelopmentTool</rdfs:label>
     </owl:Class>
     
 
@@ -829,7 +981,10 @@
     <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Documentation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Documentation">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Documentation"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent"/>
+        <rdfs:comment>This class represents the concept of &apos;Documentation&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Documentation</rdfs:label>
     </owl:Class>
     
 
@@ -837,6 +992,7 @@
     <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Evaluation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Evaluation">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Review"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -844,6 +1000,8 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Criteria"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This class represents the concept of &apos;Evaluation&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Evaluation</rdfs:label>
     </owl:Class>
     
 
@@ -852,6 +1010,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ExternalEvaluator">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Stakeholder"/>
+        <rdfs:comment>This class represents the concept of &apos;ExternalEvaluator&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>ExternalEvaluator</rdfs:label>
     </owl:Class>
     
 
@@ -860,6 +1020,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#FacultyMember">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Stakeholder"/>
+        <rdfs:comment>This class represents the concept of &apos;FacultyMember&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>FacultyMember</rdfs:label>
     </owl:Class>
     
 
@@ -868,6 +1030,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#FinalReport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Documentation"/>
+        <rdfs:comment>This class represents the concept of &apos;FinalReport&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>FinalReport</rdfs:label>
     </owl:Class>
     
 
@@ -876,6 +1040,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Framework">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
+        <rdfs:comment>This class represents the concept of &apos;Framework&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Framework</rdfs:label>
     </owl:Class>
     
 
@@ -890,6 +1056,8 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This class represents the concept of &apos;Implementation&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Implementation</rdfs:label>
     </owl:Class>
     
 
@@ -904,6 +1072,8 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This class represents the concept of &apos;Manager&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Manager</rdfs:label>
     </owl:Class>
     
 
@@ -912,6 +1082,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Planning">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Process"/>
+        <rdfs:comment>This class represents the concept of &apos;Planning&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Planning</rdfs:label>
     </owl:Class>
     
 
@@ -921,6 +1093,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Poster">
         <rdfs:subClassOf rdf:resource="http://schema.org/Poster"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent"/>
+        <rdfs:comment>This class represents the concept of &apos;Poster&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Poster</rdfs:label>
     </owl:Class>
     
 
@@ -929,6 +1103,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Presentation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Process"/>
+        <rdfs:comment>This class represents the concept of &apos;Presentation&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Presentation</rdfs:label>
     </owl:Class>
     
 
@@ -949,6 +1125,8 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This class represents the concept of &apos;Process&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Process</rdfs:label>
     </owl:Class>
     
 
@@ -957,6 +1135,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProgrammingLanguage">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
+        <rdfs:comment>This element represents the concept of &apos;ProgrammingLanguage&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>ProgrammingLanguage</rdfs:label>
     </owl:Class>
     
 
@@ -965,6 +1145,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
+        <rdfs:comment>This class represents the concept of &apos;ProjectComponent&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>ProjectComponent</rdfs:label>
     </owl:Class>
     
 
@@ -973,6 +1155,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Proposal">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent"/>
+        <rdfs:comment>This class represents the concept of &apos;Proposal&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Proposal</rdfs:label>
     </owl:Class>
     
 
@@ -981,6 +1165,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#SRS">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Documentation"/>
+        <rdfs:comment>This class represents the concept of &apos;SRS&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>SRS</rdfs:label>
     </owl:Class>
     
 
@@ -988,7 +1174,10 @@
     <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#SourceCode -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#SourceCode">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Code"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Deliverable"/>
+        <rdfs:comment>This class represents the concept of &apos;SourceCode&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>SourceCode</rdfs:label>
     </owl:Class>
     
 
@@ -996,6 +1185,7 @@
     <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Stakeholder -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Stakeholder">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1004,6 +1194,8 @@
                 <owl:onDataRange rdf:resource="http://schema.org/email"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This class represents the concept of &apos;Stakeholder&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Stakeholder</rdfs:label>
     </owl:Class>
     
 
@@ -1043,6 +1235,8 @@
                 <owl:onDataRange rdf:resource="http://schema.org/identifier"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This class represents the concept of &apos;Student&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Student</rdfs:label>
     </owl:Class>
     
 
@@ -1057,6 +1251,8 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Student"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>This class represents the concept of &apos;Supervisor&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Supervisor</rdfs:label>
     </owl:Class>
     
 
@@ -1065,6 +1261,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#CapstoneProject"/>
+        <rdfs:comment>This class represents the concept of &apos;Tools&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Tools</rdfs:label>
     </owl:Class>
     
 
@@ -1073,6 +1271,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#UserManual">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Deliverable"/>
+        <rdfs:comment>This class represents the concept of &apos;UserManual&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>UserManual</rdfs:label>
     </owl:Class>
     
 
@@ -1082,6 +1282,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video">
         <rdfs:subClassOf rdf:resource="http://schema.org/VideoObject"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent"/>
+        <rdfs:comment>This class represents the concept of &apos;Video&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Video</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
