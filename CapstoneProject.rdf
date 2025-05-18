@@ -223,6 +223,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#hasPosterTool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#hasPosterTool">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Poster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Postertool"/>
+        <rdfs:comment>This element represents the concept of &apos;hasPosterTool&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>hasPosterTool</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#hasProcess -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#hasProcess">
@@ -230,6 +241,17 @@
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Process"/>
         <rdfs:comment>This element represents the concept of &apos;hasProcess&apos; as used in the capstone project ontology.</rdfs:comment>
         <rdfs:label>hasProcess</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#hasProposalTool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#hasProposalTool">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Proposal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Proposaltool"/>
+        <rdfs:comment>This element represents the concept of  &apos;hasProposalTool&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>hasProposalTool</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -252,6 +274,17 @@
         <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
         <rdfs:comment>This element represents the concept of &apos;hasTool&apos; as used in the capstone project ontology.</rdfs:comment>
         <rdfs:label>hasTool</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#hasVideoTool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#hasVideoTool">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Video"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Videotool"/>
+        <rdfs:comment>This element represents the concept of &apos;hasVideoTool&apos; as used in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>hasVideoTool</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -863,7 +896,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#AIModel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
-        <rdfs:comment>This class represents the concept of &apos;AIModel&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:comment>This class represents the concept of &apos;AlModel&apos; in the capstone project ontology.</rdfs:comment>
         <rdfs:label>AIModel</rdfs:label>
     </owl:Class>
     
@@ -1099,6 +1132,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Postertool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Postertool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
+        <rdfs:comment>This class represents the concept of &apos;Postertool&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Postertool</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Presentation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Presentation">
@@ -1157,6 +1200,16 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent"/>
         <rdfs:comment>This class represents the concept of &apos;Proposal&apos; in the capstone project ontology.</rdfs:comment>
         <rdfs:label>Proposal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Proposaltool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Proposaltool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
+        <rdfs:comment>This class represents the concept of &apos;Proposaltool&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Proposaltool</rdfs:label>
     </owl:Class>
     
 
@@ -1284,6 +1337,16 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#ProjectComponent"/>
         <rdfs:comment>This class represents the concept of &apos;Video&apos; in the capstone project ontology.</rdfs:comment>
         <rdfs:label>Video</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Videotool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Videotool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2025/3/untitled-ontology-11#Tools"/>
+        <rdfs:comment>This class represents the concept of &apos;Videotool&apos; in the capstone project ontology.</rdfs:comment>
+        <rdfs:label>Videotool</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
